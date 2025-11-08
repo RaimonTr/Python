@@ -1,6 +1,6 @@
 //Modifico "Origen" para que funcione tanto si lo usa Santi como yo
     Origen =
-        if User = "ES18434970X" then
+        if User = "ESXXXXXXXXXLETRA" then
             let
                 Origen2 = Folder.Contents("C:/Users/" & User & "/OneDrive - Enel Spa/Reclamaciones"),
                 #"Filas filtradas" = Table.SelectRows(Origen2, let latest = List.Max(Origen[Date created]) in each [Date created] = latest),
